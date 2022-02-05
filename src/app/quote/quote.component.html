@@ -1,0 +1,12 @@
+<div>
+    <h2>Record the most inspirational quotes you've ever heard</h2>
+    <ul>
+        <div *ngFor='let quote of quote; let i = index'>
+            <li>{{quote.quoteName}}
+            </li>
+            <button (click)='toggleDetails(i)'>See More</button>
+            <app-quotedescription *ngIf='quote.showQuoteDetails' [quote]='quote'></app-quotedescription>
+        </div>
+    </ul>
+    <p *ngIf='quote.length > 15'>You have enough quotes already, are you not inspired yet?</p>
+</div>
