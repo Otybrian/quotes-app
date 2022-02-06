@@ -5,7 +5,9 @@
             <li>{{quote.quoteName}}
             </li>
             <button (click)='toggleDetails(i)'>See More</button>
-            <app-quotedescription *ngIf='quote.showQuoteDetails' [quote]='quote'></app-quotedescription>
+           <!-- making the parent element receive the event -->
+            <app-quotedescription *ngIf='quote.showQuoteDetails' [quote]='quote'
+            (isComplete) = 'completeQuote($event, i)'></app-quotedescription>
         </div>
     </ul>
     <p *ngIf='quote.length > 15'>You have enough quotes already, are you not inspired yet?</p>
