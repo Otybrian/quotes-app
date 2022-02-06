@@ -1,8 +1,9 @@
 <p>
     {{quote.quoteDetails}}
 </p>
+<p>posted by {{quote.postedBy}}</p>
 <p>
-    posted on, {{quote.datePosted|date}}
+    on, {{quote.datePosted|date}}
 </p>
 <!-- add a delete button with a click event binding to call quoteComplete(true) -->
 <button (click)='quoteComplete(true)'>Delete this quote</button>
