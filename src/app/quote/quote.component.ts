@@ -9,8 +9,8 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quote:Quote[] = [
-    new Quote (1, 'Yes we can!', 'Barrack Obama'),
-    new Quote (2, 'The higher you go the cooler it becomes','Geographers'),
+    new Quote (1, 'Yes we can!', 'Barrack Obama', new Date (2022,2,6)),
+    new Quote (2, 'The higher you go the cooler it becomes','Geographers', new Date (2022,2,6)),
   ];
 
   toggleDetails(index:number){
@@ -19,6 +19,8 @@ export class QuoteComponent implements OnInit {
 
   completeQuote(isComplete:boolean, index:number){
     if (isComplete) {
+
+      confirm('Do you want to delete this quote?')
       this.quote.splice(index, 1);
     }
   }
