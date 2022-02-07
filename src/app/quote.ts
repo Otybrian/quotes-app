@@ -4,7 +4,7 @@ export class Quote {
  
 
     constructor(public id: number, public quoteName: string, public quoteDetails: string, public postedBy:string,
-        public datePosted: Date){
+        public completeDate: Date){
         this.showQuoteDetails=false;
     }
 

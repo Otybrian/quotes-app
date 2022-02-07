@@ -31,9 +31,9 @@
 
     <div class="form-group">
         <label for="date">Date Posted</label>
-        <input type='date' id="date" [(ngModel)]="newQuote.datePosted" name="datePosted" #datePosted="ngModel"
+        <input type='date' id="date" [(ngModel)]="newQuote.completeDate" name="completeDate" #datePosted="ngModel"
             #date='ngModel' required>
-        {{newQuote.datePosted}}
+        {{newQuote.completeDate}}
         <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
             <p>Date must be written</p>
         </div>
