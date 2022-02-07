@@ -16,23 +16,16 @@ Use the command below in your terminal to instal git;
 `$ sudo apt install git-all`
 
 ### Setup
+You are able to access the files used in this project by cloning into your computer using the following command in git;
+"git clone https://github.com/Otybrian/quotes-app.git"
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Live site
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+View [Live] (https:)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### License
+The project is under [MIT] license
