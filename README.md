@@ -25,7 +25,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Live site
 
-View [Live] (https:)
+View [Live] (https:otybrian.github.io/quotes-app/)
 
 ### License
 The project is under [MIT] license
