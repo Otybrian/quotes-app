@@ -1,0 +1,12 @@
+.details{
+    display: flex;
+    margin-left: 5px;
+}
+#delete{
+    color: white;
+    height: 60px;
+    background: red;
+}
+.votes{
+    margin-left: 15px;
+}
