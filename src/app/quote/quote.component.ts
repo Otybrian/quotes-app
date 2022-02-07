@@ -30,7 +30,7 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote:any){
     let quoteLength = this.quote.length;
     quote.id = quoteLength + 1;
-    quote.quoteName = new quote()
+    quote.completeDate = new Date(quote.completeDate)
     this.quote.push(quote)
   }
 
