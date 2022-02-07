@@ -1,10 +1,21 @@
-# Quotes
+# quotes-app
+## Authors
+Brian Otieno
+### Technoloies Used
+HTML
+CSS
+Bootsrap
+Angular
+Git
+### Description
+quotes-app is a web application that allows user to post, store, read, like, dislike and delete quotes. The app is able to store 15 quotes at a time
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+### Prerequisites
+Too use quotes-app, you need to install git.
+Use the command below in your terminal to instal git;
+`$ sudo apt install git-all`
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Setup
 
 ## Code scaffolding
 
