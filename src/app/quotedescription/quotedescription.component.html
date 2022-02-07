@@ -8,3 +8,11 @@
 <!-- add a delete button with a click event binding to call quoteComplete(true) -->
 <button (click)='quoteComplete(true)'>Delete this quote</button>
 
+<div>
+    <p>React to this quote</p>
+    <button (click)='likeButton()'>Like</button>
+     <p>{{likesCount}}</p>
+    <button (click)='dislikeButton()'>Like</button>
+    <p>{{dislikesCount}}</p>
+    <p></p>
+</div>

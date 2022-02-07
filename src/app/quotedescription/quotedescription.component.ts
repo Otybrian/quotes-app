@@ -18,6 +18,15 @@ export class QuotedescriptionComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+ likesCount:number = 0;
+ likeButton(){
+this.likesCount++;
+}
+
+dislikesCount:number = 0;
+ dislikeButton(){
+   this.dislikesCount--;
+ }
 
   constructor() {}
   

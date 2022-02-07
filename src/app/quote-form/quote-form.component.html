@@ -2,26 +2,41 @@
 <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
         <label for="quote">Write your quote here</label>
-        <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quoteName" name="name" required>
+        <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quoteName" name="quote"
+            #quote='ngModel' required>
         {{newQuote.quoteName}}
+        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <p>Write your quote</p>
+        </div>
     </div>
 
     <div class="form-group">
         <label for="author">Who is the author of this quote?</label>
-        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.quoteDetails" author="author" required>
+        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.quoteDetails" name="author"
+            #author='ngModel' required>
+        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <p>Who said this quote</p>
+        </div>
     </div>
 
     <div class="form-group">
         <label for="name">Write your name here</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.postedBy" name="name" required>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.postedBy" name="name" #name='ngModel'
+            required>
         {{newQuote.postedBy}}
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <p>Write your name</p>
+        </div>
     </div>
 
     <div class="form-group">
         <label for="date">Date Posted</label>
         <input type='date' id="date" [(ngModel)]="newQuote.datePosted" name="datePosted" #datePosted="ngModel"
-            required>
-            {{newQuote.datePosted}}
+            #date='ngModel' required>
+        {{newQuote.datePosted}}
+        <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+            <p>Date must be written</p>
+        </div>
     </div>
     <button type="submit" class="btn btn-success">Add Quote</button>
 </form>
