@@ -7,7 +7,7 @@
                     <div *ngFor='let quote of quote; let i = index'>
                         <li>{{quote.quoteName}}
                         </li>
-                        <button (click)='toggleDetails(i)'>See More</button>
+                        <button style="background: green;" (click)='toggleDetails(i)'>See More</button>
                         <!-- making the parent element receive the event -->
                         <app-quotedescription *ngIf='quote.showQuoteDetails' [quote]='quote'
                             (isComplete)='completeQuote($event, i)'></app-quotedescription>
