@@ -1,21 +1,20 @@
 <div class="details">
-<p>
-   Author: {{quote.quoteDetails}}
-</p>
-<p>Posted by: {{quote.postedBy}}</p><br>
-<p>
-  {{quote.completeDate|dateCount}}<br>
-  days ago
-</p>
-<!-- add a delete button with a click event binding to call quoteComplete(true) -->
-<button (click)='quoteComplete(true)' id="delete" >Delete this quote</button>
+    <p>
+        Author: {{quote.quoteDetails}}
+    </p>
+    <p>Posted by: {{quote.postedBy}}</p><br>
+    <p>
+        {{quote.completeDate|dateCount}}<br>
+        days ago
+    </p>
+    <!-- add a delete button with a click event binding to call quoteComplete(true) -->
+    <button (click)='quoteComplete(true)' id="delete">Delete this quote</button>
 
-<div class="votes">
-    <p>React to this quote</p>
-    <button (click)='likeButton()'>Like</button>
-     <p>{{likesCount}}</p>
-    <button (click)='dislikeButton()'>Dislike</button>
-    <p>{{dislikesCount}}</p>
-    <p></p>
-</div>
+    <div class="votes">
+        <p>React to this quote</p>
+        <button style="background:green" (click)='likeButton()'>Like</button>
+        <p>{{likesCount}}</p>
+        <button style="background: red;" (click)='dislikeButton()'>Dislike</button>
+        <p>{{dislikesCount}}</p>
+    </div>
 </div>
